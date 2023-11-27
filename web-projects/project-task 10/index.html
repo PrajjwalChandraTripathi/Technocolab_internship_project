@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors Game</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #game-container {
+      text-align: center;
+    }
+
+    button {
+      font-size: 16px;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div id="game-container">
+  <h1>Rock, Paper, Scissors</h1>
+  <button onclick="playGame('rock')">Rock</button>
+  <button onclick="playGame('paper')">Paper</button>
+  <button onclick="playGame('scissors')">Scissors</button>
+  <button onclick="playGame('bomb')">Cheat with Bomb</button>
+  <p id="result"></p>
+</div>
+
+<script>
+  const getUserChoice = (userInput) => {
+    userInput = userInput.toLowerCase();
+
+    if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors') {
+      return userInput;
+    } else {
+      console.log('Error: Please choose rock, paper, or scissors.');
+    }
+  };
+
+  const getComputerChoice = () => {
+    const randomNumber = Math.floor(Math.random() * 3);
+
+    switch (randomNumber) {
+      case 0:
+        return 'rock';
+      case 1:
+        return 'paper';
+      case 2:
+        return 'scissors';
+    }
+  };
+
+  const determineWinner = (userChoice, computerChoice) => {
+    if (userChoice === computerChoice) {
+      return 'It\'s a tie!';
+    }
+
+    if (userChoice === 'rock') {
+      return computerChoice === 'paper' ? 'Computer wins!' : 'You win!';
+    } else if (userChoice === 'paper') {
+      return computerChoice === 'scissors' ? 'Computer wins!' : 'You win!';
+    } else if (userChoice === 'scissors') {
+      return computerChoice === 'rock' ? 'Computer wins!' : 'You win!';
+    }
+  };
+
+  const playGame = (userChoice) => {
+    const computerChoice = getComputerChoice();
+    const result = determineWinner(userChoice, computerChoice);
+
+    document.getElementById('result').innerText = `User choice: ${userChoice}\nComputer choice: ${computerChoice}\n${result}`;
+  };
+</script>
+
+</body>
+</html>

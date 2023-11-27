@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/abrilfatface/v12/zOL64pLDlL1D99S8geA5Z_esZW2xOQ-xsNqO47m55DA.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/worksans/v9/QGY_z_wNahGAdqQ43Rh_fKef8J46TsuA85A_R_Kc_us.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('https://fonts.gstatic.com/s/worksans/v9/QGY3z_wNahGAdqQ43Rh_fKef_K46TsuA85A_R_Kc_us.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('https://fonts.gstatic.com/s/worksans/v9/QGY3z_wNahGAdqQ43Rh_fKef-b06TsuA85A_R_Kc_us.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l521wRZWMf_0WkndrBwZ0I.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l521wRZWMf_0WkndrBwZ0Ii.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Croissant One';
+    font-style: normal;
+    font-weight: normal;
+    src: url('styles/fonts/CroissantOne-Regular.ttf') format('truetype');
+  }
+  
+  body {
+    font-family: 'Work Sans', sans-serif;
+  }
+  
+  .header {
+    font-weight: bold;
+  }
+  
+  .banner h2 {
+    font-weight: 500;
+  }
+  
+  .banner h1 {
+    font-weight: 900;
+  }
+  
+  .journal p {
+    line-height: 1.4;
+  }
+  
+  .journal .first-letter {
+    line-height: 0.87;
+  }
+  
+  .quote {
+    line-height: 1.2;
+  }
+  
+  footer .content {
+    line-height: 1.5;
+  }
+  
+  .footer {
+    font-family: 'Croissant One', 'Merriweather', serif;
+  }
+  
